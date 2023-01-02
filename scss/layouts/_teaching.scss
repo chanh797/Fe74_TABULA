@@ -1,0 +1,39 @@
+#teaching{
+    background-image: url(/images/Wave_White_bottom_right_shape_01.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:rgb(220 209 240);
+    .card{
+        margin-top: 30px;
+        border-radius: 10px;
+        border:none;
+        overflow: hidden;
+        transition: all 0.5s;
+        &:hover{
+            box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+        }
+    }
+    .card-img-top{
+        transform: scale(1);
+        transition: all 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .img_card{
+        overflow: hidden;
+    }
+    .card-span{
+        @include f-text($fs-1, $fw-6, $color-violet);
+        display: block;
+        margin-bottom : 5px;
+    }
+    .card-title{
+        @include f-text($fs-1_7, $fw-7, $color-black-1);
+    }
+    .card-text{
+        @include f-text($fs-1_1, $fw-5, $color-black-1);
+        line-height: 27px;
+    }
+}

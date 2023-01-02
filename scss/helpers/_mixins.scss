@@ -1,0 +1,20 @@
+@mixin f-text($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+@mixin foot_header(){
+    font-size: $fs-1_7;
+    font-weight: $fw-7;
+    // color: $color-white;
+    padding-bottom: 25px;
+}
+@mixin bt_style($bg_color, $color){
+    background-color: $bg_color;
+    color: $color;
+    transition: all 0.3s;
+    border-radius: 50px;
+    font-weight: $fw-5;
+    font-size: $fs-1;
+    border: 1px solid transparent;
+}

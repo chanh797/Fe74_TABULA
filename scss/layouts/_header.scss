@@ -1,0 +1,96 @@
+header {
+    position: absolute;
+    width: 100%;
+    height: 46%;
+    background-image: url(/images/yellow_top_wave_01.png);
+    background-position: right top;
+    background-size: cover;
+    z-index: 1;
+    .container {
+        padding: 0;
+    }
+    .logo {
+        max-width: 80px;
+        max-height: 80px;
+    }
+    .nav-link {
+        font-size: $fs-1;
+        font-weight: $fw-6;
+        color: $color-black-1;
+        line-height: $lh-1;
+        transition: all 0.3s;
+        padding: 0 !important;
+        position: relative;
+    
+        &:hover{
+            color: $color-violet;
+    
+        }
+    
+        &::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: $color-violet;
+            display: block;
+            border-radius: 11px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -4px;
+            transform: scale(0);
+            transition: all 0.4s;
+        }
+        &:hover::after{
+            transform: scale(1.5) !important;
+        } 
+        
+    }
+    .nav-item {
+        padding: 0 $pd-l-5 0 0 !important;
+    
+        .active::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: $color-violet;
+            display: block;
+            border-radius: 11px;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: scale(1);
+            margin-left: -4px;
+        }
+    
+    }
+    .nav_contact{
+        margin: 0;
+    }
+    .social {
+        list-style: none;
+        display: inline-block;
+        margin-left: 0.75em;
+    
+        i {
+            line-height: 40px;
+            color: $color-black-1;
+        }
+    
+        &:hover {
+            i {
+                color: $color-violet;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

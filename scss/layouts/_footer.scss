@@ -1,0 +1,64 @@
+footer {
+    background-image: url(/images/footer_background.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 180px 0;
+    color: $color-white;
+
+    .footer__contact {
+
+        h3 {
+            @include foot_header();
+        }
+         li {
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer__link {
+        h3 {
+            @include foot_header();
+        }
+        
+        li{
+            line-height: 30px;
+        }
+         li::after {
+            content: "";
+            width: 25%;
+            height: 1px;
+            background-color: #990171;
+            display: block;
+        }
+        a:hover{
+            color: $color-white_1;
+            text-decoration: none;
+        }
+    }
+    .footer__news{
+        h3{
+            @include foot_header();
+        }
+    }
+    li{
+        list-style: none;
+        @include f-text($fs-1, $fw-5, $color-white);
+        i {
+            margin-right: 10px;
+        }
+        .social {
+            display: inline-block;
+
+            a:hover {
+                color: $color-black-1;
+            }
+        }
+    }
+
+    a{
+        color: $color-white;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+}
